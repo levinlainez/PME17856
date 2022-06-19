@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E17858.Views.listaPage" 
+             xmlns:convertidor="clr-namespace:PM2E17858.Convertidor"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+              BackgroundColor="#394BA7"
+             >
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <convertidor:BytetoImage x:Key="ByteToImage"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+                 IconImageSource="compartir1.png"
+                 Order="Primary"
+                 Priority="0" 
+            x:Name="compartirr"
+            Clicked="compartirr_Clicked"/>
+        <ToolbarItem 
+                 IconImageSource="image.png"
+                 Order="Primary"
+                 Priority="0" 
+            x:Name="informacion"
+            Clicked="informacion_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+
+        <pancake:PancakeView Grid.Row="1" BackgroundColor="WhiteSmoke"
+                                 CornerRadius="60,60,0,0" >
+            <ListView x:Name="lsubicacion" ItemTapped="lsubicacion_ItemTapped"  Margin="20"
+                           SeparatorVisibility="None" BackgroundColor="WhiteSmoke"
+                           Header="" HasUnevenRows="True">
+
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="180"/>
+                                <ColumnDefinition Width="auto"/>
+
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Imagen" Grid.Column="0" FontSize="Subtitle"
+                                       TextColor="Green" />
+                            <Label Text="Descripcion" Grid.Column="2" FontSize="Subtitle"
+                                       TextColor="Green"/>
+                           
+
+                        </Grid>
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View >
+                                <SwipeView Padding="0,10,0,10" BackgroundColor="Transparent">
+                                    <SwipeView.RightItems >
+                                        <SwipeItems >
+                                            <SwipeItem Text="eliminar" BackgroundColor="Red" x:Name="eliminar"    Invoked="eliminar_Invoked"></SwipeItem>
+                                        </SwipeItems>
+                                    </SwipeView.RightItems>
+
+                                    <SwipeView.LeftItems >
+                                        <SwipeItems >
+                                            <SwipeItem Text="Mapa"  BackgroundColor="Blue"  x:Name="mapa"  Invoked="mapa_Invoked"></SwipeItem>
+                                        </SwipeItems>
+                                    </SwipeView.LeftItems>
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                         
+
+                                        </Grid.ColumnDefinitions>
+                                       
+                                   
+                                        <pancake:PancakeView 
+                                        Grid.Column="0" 
+                                            Grid.Row="0"
+                                        CornerRadius="12"
+                                            WidthRequest="40"
+                                            HeightRequest="40"
+                                        >
+                                            <Image
+                                         Source="{Binding foto, Converter={StaticResource ByteToImage}}"/>
+
+                                        </pancake:PancakeView>
+                                        <Label Text="{Binding descripcion}" Grid.Row="0" Grid.Column="2" FontSize="Body"
+                                           TextColor="#566573"/>
+
+
+                                    </Grid>
+                                </SwipeView>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </pancake:PancakeView>
+
+
+
+
+
+
+    </ContentPage.Content>
+</ContentPage>

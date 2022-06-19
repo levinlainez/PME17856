@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E17858.Views.MainPage"
+             xmlns:controls="clr-namespace:PM2E17858.Controls;assembly=PM2E17858"
+             BackgroundColor="#394BA7">
+
+    <Grid Padding="20" RowSpacing="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+
+        </Grid.RowDefinitions>
+
+
+        <ImageButton 
+            Source="foto" 
+            Grid.Row="0" 
+            HeightRequest="150" 
+            WidthRequest="150" 
+            BackgroundColor="Transparent"
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"
+            x:Name="Foto" 
+            Clicked="Foto_Clicked"/>
+
+
+
+
+        <controls:StandardEntry
+            Grid.Row="1"
+            Padding="13"
+            BackgroundColor="#5e99d3"
+            BorderColor="White"
+            BorderThickness="1"
+            CornerRadius="8"
+            Placeholder="Latitud"
+            x:Name="txtLatitud"
+            PlaceholderColor="White"
+            TextColor="White"
+            Keyboard="Numeric"/>
+
+
+
+        <controls:StandardEntry
+            Grid.Row="2"
+            Padding="13"
+            BackgroundColor="#5e99d3"
+            BorderColor="White"
+            BorderThickness="1"
+            CornerRadius="8"
+            Placeholder="Longitud"
+            x:Name="txtLongitud"
+            PlaceholderColor="White"
+            TextColor="White"
+            Keyboard="Numeric"/>
+
+
+
+        <controls:StandardEntry
+            Grid.Row="3"
+            Padding="13"
+            BackgroundColor="#5e99d3"
+            BorderColor="White"
+            BorderThickness="1"
+            CornerRadius="8"
+            Placeholder="Descripcion"
+            x:Name="txtDescripcion"
+            PlaceholderColor="White"
+            TextColor="White"
+            Keyboard="Text"
+            Margin="0,0,0,20"/>
+
+
+     <Button 
+            Grid.Row="4"
+            BackgroundColor="#efb810"
+            CornerRadius="8"
+            Text="Agregar"
+            TextColor="Black"
+            TranslationY="-20" 
+            x:Name="btnAgregar"
+            Clicked="btnAgregar_Clicked"/>
+        <Button 
+            Grid.Row="5"
+            BackgroundColor="#efb810"
+            CornerRadius="8"
+            Text="Lista Sitios"
+            TextColor="Black"
+            TranslationY="-20" 
+            x:Name="btnListaSitios"
+            Clicked="btnListaSitios_Clicked"/>
+        <Button 
+            Grid.Row="6"
+            BackgroundColor="#efb810"
+            CornerRadius="8"
+            Text="Salir App"
+            TextColor="Black"
+            TranslationY="-20" 
+            x:Name="btnSalirApp"
+            Clicked="btnSalirApp_Clicked"/>
+
+
+
+    </Grid>
+
+</ContentPage>

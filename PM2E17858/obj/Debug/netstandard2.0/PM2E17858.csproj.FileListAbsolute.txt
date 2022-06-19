@@ -1,0 +1,17 @@
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\PM2E17858.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\PM2E17858.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\PM2E17858.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\PM2E17858.AssemblyInfo.cs
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\PM2E17858.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\bin\Debug\netstandard2.0\PM2E17858.deps.json
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\bin\Debug\netstandard2.0\PM2E17858.dll
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\bin\Debug\netstandard2.0\PM2E17858.pdb
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\PM2E17858.dll
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\refint\PM2E17858.dll
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\PM2E17858.pdb
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\ref\PM2E17858.dll
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\Views\listaPage.xaml.g.cs
+C:\Users\HP\source\repos\PM2E17858\PM2E17858\obj\Debug\netstandard2.0\Views\MapaPage.xaml.g.cs
