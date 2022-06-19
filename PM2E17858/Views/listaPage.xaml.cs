@@ -84,6 +84,13 @@ namespace PM2E17858.Views
 
         private async void eliminar_Invoked(object sender, EventArgs e)
         {
+
+            if (item == null)
+            {
+                await DisplayAlert("Error", "Debe seleccionar una fila", "OK");
+                return;
+            }
+
             try
             {
                 var ubicacion = new Models.Examen()

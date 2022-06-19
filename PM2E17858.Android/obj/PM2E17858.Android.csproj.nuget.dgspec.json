@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\PM2E17858\\PM2E17858.Android\\PM2E17858.Android.csproj": {}
+    "C:\\Users\\HP\\source\\GIT\\PME17856\\PM2E17858.Android\\PM2E17858.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\PM2E17858\\PM2E17858.Android\\PM2E17858.Android.csproj": {
+    "C:\\Users\\HP\\source\\GIT\\PME17856\\PM2E17858.Android\\PM2E17858.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\PM2E17858\\PM2E17858.Android\\PM2E17858.Android.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\source\\GIT\\PME17856\\PM2E17858.Android\\PM2E17858.Android.csproj",
         "projectName": "PM2E17858.Android",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\PM2E17858\\PM2E17858.Android\\PM2E17858.Android.csproj",
+        "projectPath": "C:\\Users\\HP\\source\\GIT\\PME17856\\PM2E17858.Android\\PM2E17858.Android.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\PM2E17858\\PM2E17858.Android\\obj\\",
+        "outputPath": "C:\\Users\\HP\\source\\GIT\\PME17856\\PM2E17858.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "monoandroid12.0": {
             "projectReferences": {
-              "C:\\Users\\HP\\source\\repos\\PM2E17858\\PM2E17858\\PM2E17858.csproj": {
-                "projectPath": "C:\\Users\\HP\\source\\repos\\PM2E17858\\PM2E17858\\PM2E17858.csproj"
+              "C:\\Users\\HP\\source\\GIT\\PME17856\\PM2E17858\\PM2E17858.csproj": {
+                "projectPath": "C:\\Users\\HP\\source\\GIT\\PME17856\\PM2E17858\\PM2E17858.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\Users\\HP\\source\\repos\\PM2E17858\\PM2E17858\\PM2E17858.csproj": {
+    "C:\\Users\\HP\\source\\GIT\\PME17856\\PM2E17858\\PM2E17858.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\PM2E17858\\PM2E17858\\PM2E17858.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\source\\GIT\\PME17856\\PM2E17858\\PM2E17858.csproj",
         "projectName": "PM2E17858",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\PM2E17858\\PM2E17858\\PM2E17858.csproj",
+        "projectPath": "C:\\Users\\HP\\source\\GIT\\PME17856\\PM2E17858\\PM2E17858.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\PM2E17858\\PM2E17858\\obj\\",
+        "outputPath": "C:\\Users\\HP\\source\\GIT\\PME17856\\PM2E17858\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

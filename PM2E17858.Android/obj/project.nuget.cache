@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dt6XrcEqL7MdxtALlOXSA3CZ51iIHu9tSqssAIkLfzZ+ANPotwrOE+4jD9qN8DaN5KUFqpUy3yOfxoNEt0/Jnw==",
+  "dgSpecHash": "4AqP1JLhxum+6V04JC/9r4QydTT3P9hHtBNrCMeC+Gifng9M8NyYazImseMpZ1orC8ueSmgEiLM6DrQN310+kw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\source\\repos\\PM2E17858\\PM2E17858.Android\\PM2E17858.Android.csproj",
+  "projectFilePath": "C:\\Users\\HP\\source\\GIT\\PME17856\\PM2E17858.Android\\PM2E17858.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\plugin.currentactivity\\2.1.0.4\\plugin.currentactivity.2.1.0.4.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\plugin.permissions\\6.0.1\\plugin.permissions.6.0.1.nupkg.sha512",

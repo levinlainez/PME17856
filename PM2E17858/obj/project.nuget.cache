@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bEOD8mCRT0XUM+j877+NGK2Mqhj4ZM8yMCc2JHnWrwAiHq44xy+h1xbIKQONstJChi/nhoVhpTCQt4kEmC9kFg==",
+  "dgSpecHash": "cd6bouZ3p0HXug9SXLSEWzuOxbYt7KBuqeVWEl+VcIxMVG58CLGB1SagjfHuCtQvIqHTBq7jMmd1IgN5UK8q7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\source\\repos\\PM2E17858\\PM2E17858\\PM2E17858.csproj",
+  "projectFilePath": "C:\\Users\\HP\\source\\GIT\\PME17856\\PM2E17858\\PM2E17858.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
