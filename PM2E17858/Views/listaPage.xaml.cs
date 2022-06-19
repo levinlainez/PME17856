@@ -138,7 +138,7 @@ namespace PM2E17858.Views
 
             await Share.RequestAsync(new ShareFileRequest
             {
-                Title = "Gerald's YouTube",
+                Title = "Progracion movil ",
                 File = new ShareFile(image)
             });
         }
