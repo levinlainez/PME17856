@@ -1,6 +1,7 @@
 ﻿using Plugin.Geolocator;
 using Plugin.Geolocator.Abstractions;
 using Plugin.Media;
+using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
 using System;
 using System.Collections.Generic;
@@ -43,19 +44,20 @@ namespace PM2E17858.Views
 
         protected async  void iniciarGps()
         {
-         
-            if (!CrossGeolocator.Current.IsGeolocationEnabled)
-            {
-                await DisplayAlert("Advertencia", "Revise la configuracion de su GPS", "OK");
-                return;
-            }
+            var localizacion = await Geolocation.GetLocationAsync();
 
-            CrossGeolocator.Current.PositionChanged += current_PositionChanged;
-            await CrossGeolocator.Current.StartListeningAsync(new TimeSpan(0, 0, 5), 5);
            
 
-
-
+            if (localizacion != null)
+            {
+                var result = await Geolocation.GetLocationAsync(new GeolocationRequest(GeolocationAccuracy.Default, TimeSpan.FromMinutes(1)));
+                txtLatitud.Text = $"{result.Latitude}";
+                txtLongitud.Text = $"{result.Longitude}";
+            }
+            else
+            {
+                await DisplayAlert("Error", "Debe activar el gps", "OK");
+            }
 
         }
 
@@ -71,12 +73,7 @@ namespace PM2E17858.Views
        
 
         private async void btnAgregar_Clicked(object sender, EventArgs e)
-        {
-
-            
-           
-           
-
+        {       
                 try
             {
                 if (txtLatitud.Text == null)
