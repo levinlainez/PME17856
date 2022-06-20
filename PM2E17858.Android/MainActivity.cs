@@ -11,14 +11,21 @@ namespace PM2E17858.Droid
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
 
-        
+        readonly string[] Permission =
+        {
+            Android.Manifest.Permission.AccessCoarseLocation,
+            Android.Manifest.Permission.AccessFineLocation,
+            Android.Manifest.Permission.Camera,
+            Android.Manifest.Permission.ReadExternalStorage,
+            Android.Manifest.Permission.WriteExternalStorage
+        };
         const int Requestapp = 0;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            
+            RequestPermissions(Permission, Requestapp);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }

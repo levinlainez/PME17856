@@ -20,7 +20,7 @@ namespace PM2E17858.Views
         public MainPage()
         {
             InitializeComponent();
-            iniciarGps();
+          
 
 
         }
@@ -42,22 +42,25 @@ namespace PM2E17858.Views
 
 
 
-        protected async  void iniciarGps()
+        public async  void iniciarGps()
         {
-            var localizacion = await Geolocation.GetLocationAsync();
-
-           
-
-            if (localizacion != null)
+            if (!CrossGeolocator.Current.IsGeolocationEnabled)
             {
-                var result = await Geolocation.GetLocationAsync(new GeolocationRequest(GeolocationAccuracy.Default, TimeSpan.FromMinutes(1)));
-                txtLatitud.Text = $"{result.Latitude}";
-                txtLongitud.Text = $"{result.Longitude}";
+                await DisplayAlert("Advertencia", "Revise la configuracion de su GPS", "OK");
+                return;
             }
             else
             {
-                await DisplayAlert("Error", "Debe activar el gps", "OK");
+                await DisplayAlert("Advertencia", "GPS activado", "OK");
+
             }
+
+            CrossGeolocator.Current.PositionChanged += current_PositionChanged;
+            await CrossGeolocator.Current.StartListeningAsync(new TimeSpan(0, 0, 5), 5);
+
+
+
+
 
         }
 
@@ -67,8 +70,10 @@ namespace PM2E17858.Views
 
 
             txtLatitud.Text = position.Result.Latitude.ToString();
-            txtLongitud.Text =position.Result.Longitude.ToString();
+            txtLongitud.Text = position.Result.Longitude.ToString();
         }
+
+       
 
        
 
@@ -149,6 +154,7 @@ namespace PM2E17858.Views
 
         private async void Foto_Clicked(object sender, EventArgs e)
         {
+            
 
             FileFoto = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
             {
@@ -166,6 +172,7 @@ namespace PM2E17858.Views
                     return FileFoto.GetStream();
                 });
             }
+            iniciarGps();
         }
     }
 }
